@@ -76,6 +76,21 @@ $joint2$, $joint3$ 그리고 와플 플레이트의 중점을 질점으로 가�
 기구학을 통해 얻어낸 각 질점 위치의 $(x, y, z)$ 좌표를 나타낸 식입니다.
 
 ## Control
+해당 시뮬레이션에서는 SMC 제어를 수행하였습니다.
+
+<p align="center">
+ <img width="70%" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/1a1372fa-4834-4345-94b3-457b4bcc0334"> 
+</p>
+
+Trajectory 의 desired theta 와 Manipulator 의 피드백 받은 현재 각도, 각속도를 가지고 제어를 수행합니다.
+
+<p align="center">
+ <img width="90%" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/b5a86632-c2e6-42e9-b715-6bc5a14a9add"> 
+</p>
+
+해당 블럭의 내부구조 입니다. Manipulator 의 state 는 그대로 사용하고, desired theta 는 미분하여 desired dtheta, desired ddtheta 로 만들어서 사용합니다.
+
+
 
 ### k=10, c=10
 <img width="1000" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/009378e1-a9e0-4daf-947e-88fa64175edd">
