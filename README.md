@@ -9,12 +9,9 @@ https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/4
 ## Scheme
 <img width="1657" alt="스크린샷 2024-05-17 00 44 42" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/53d1bf3c-1591-4a23-a4b6-f71c5213a043">
 
-
 로봇의 전체적인 스키마입니다.
 
 우측하단에서 생성한 Trajectory 와 좌측상단 매니퓰레이터의 현재각도, 현재 각속도를 좌측하단 제어블록에 입력하여 매니퓰레이터에 입력할 토크를 계산하고 다시 매니퓰레이터에 입력하는 폐루프 제어 구조로 설계하였습니다.
-
-
 
 ## Specification
 <img width="451" alt="스크린샷 2024-05-15 13 27 48" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/88bd44ce-5b98-4d9c-b136-75e7a37d4563">
@@ -50,7 +47,6 @@ https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/4
 
  <img width="483" alt="스크린샷 2024-05-15 13 36 11" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/9880999f-4427-453d-aa94-7cf5c098466f"> 
 
-
 DH Parameter 로 forward kinematic 을 통해 다음과 같은 $(x, y, z)$ 좌표를 얻을 수 있습니다.
 
 <img width="537" alt="스크린샷 2024-05-15 13 36 29" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/aa976aad-2aca-4380-bbe8-0869e1f5861c">
@@ -59,6 +55,19 @@ DH Parameter 로 forward kinematic 을 통해 다음과 같은 $(x, y, z)$ 좌�
 $\theta_3$ 는 지면과 항상 수평을 이뤄야하므로 $\theta_3 = \pi/2 - \theta_1 - \theta_2$
 
 ## Trajectory
+<p align="center">
+ <img width="80%" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/d63207ff-c309-469b-ba68-e1eb24ed1321"> 
+</p>
+
+앞서 Scheme 에서 소개한 것 처럼 Trajectory 는 해당 블럭에서 생성하며 내부 구조는 아래와 같습니다.
+<br/><br/>
+
+<p align="center">
+ <img width="60%" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/a932b37d-5cc8-43ca-9c9e-e3966d90b68c"> 
+</p>
+
+좌측에 보이는 것 처럼 와플 데코레이션 캐릭터의 눈, 코, 입이 각각의 함수형태로 구현되어있습니다. 
+시간(t)에 대해 그려져야하는 x,y,z 값을 만들고 다시 theta 로 변환하여 반환합니다.
 
 ## Dynamics
 <img width="574" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/2bb162bf-1ab0-4b21-b805-50eed281c2b7">
@@ -122,6 +131,3 @@ k값을 키워주면 해결할 수 있으나, k=100처럼 너무 큰 값을 주�
 결과적으로 적절한 계수를 k=50, c=60 얻을 수 있습니다.
 
 <br/>
-
-
-## Integration
