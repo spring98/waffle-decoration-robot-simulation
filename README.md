@@ -4,7 +4,7 @@
 https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/4c35c273-1c62-4d75-ac70-3a0ae670f535
 
 ## Research Topic
-와플 데코레이션 로봇 시뮬레이션 개발
+와플 데코레이션 4자유도 로봇 시뮬레이션 개발
 
 ## Scheme
 <img width="437" alt="스크린샷 2024-05-15 13 26 41" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/5325d96b-74d6-4c1e-ac61-527fb1f6ab1c">
@@ -43,7 +43,8 @@ https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/4
 |$$4$$|$$0$$|$$L_2$$|$$d_4$$|$$\theta_3$$|
 |$$Tool (Waffle Plate)$$|$$0$$|$$L_3$$|$$0$$|$$0$$|
 
-<img width="483" alt="스크린샷 2024-05-15 13 36 11" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/9880999f-4427-453d-aa94-7cf5c098466f">
+ <img width="483" alt="스크린샷 2024-05-15 13 36 11" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/9880999f-4427-453d-aa94-7cf5c098466f"> 
+
 
 DH Parameter 로 forward kinematic 을 통해 다음과 같은 $(x, y, z)$ 좌표를 얻을 수 있습니다.
 
