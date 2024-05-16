@@ -7,9 +7,14 @@ https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/4
 와플 데코레이션 4자유도 로봇 시뮬레이션 개발
 
 ## Scheme
-<img width="437" alt="스크린샷 2024-05-15 13 26 41" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/5325d96b-74d6-4c1e-ac61-527fb1f6ab1c">
+<img width="1657" alt="스크린샷 2024-05-17 00 44 42" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/53d1bf3c-1591-4a23-a4b6-f71c5213a043">
+
 
 로봇의 전체적인 스키마입니다.
+
+우측하단에서 생성한 Trajectory 와 좌측상단 매니퓰레이터의 현재각도, 현재 각속도를 좌측하단 제어블록에 입력하여 매니퓰레이터에 입력할 토크를 계산하고 다시 매니퓰레이터에 입력하는 폐루프 제어 구조로 설계하였습니다.
+
+
 
 ## Specification
 <img width="451" alt="스크린샷 2024-05-15 13 27 48" src="https://github.com/spring98/waffle-decoration-robot-simulation/assets/92755385/88bd44ce-5b98-4d9c-b136-75e7a37d4563">
